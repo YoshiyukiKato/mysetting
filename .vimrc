@@ -14,10 +14,27 @@ set showmatch
 set showmode
 set title
 set ruler
+
+" seting default tab/space
 set expandtab
 set tabstop=4
 set shiftwidth=4
+
+" setting specific tab/space
+"" languages
+autocmd! FileType ruby setlocal shiftwidth=2 tabstop=2 softtabstop=2
+
+"" markup/markdown
+autocmd! FileType jade setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd! FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd! FileType less setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd! FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd! FileType md setlocal shiftwidth=2 tabstop=2 softtabstop=2
+
+" 全角スペース絶許
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
+
+" ~/.vim/colors/molokai
 colorscheme molokai
 
 "---------------------------
