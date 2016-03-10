@@ -23,6 +23,7 @@ set shiftwidth=4
 " setting specific tab/space
 "" languages
 autocmd! FileType ruby setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd! FileType python setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 "" markup/markdown
 autocmd! FileType jade setlocal shiftwidth=2 tabstop=2 softtabstop=2
@@ -58,6 +59,10 @@ NeoBundle 'leshill/vim-json'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'lunaru/vim-less'
 NeoBundle 'tpope/vim-pathogen'
+
+NeoBundle "pangloss/vim-javascript"
+NeoBundle "mxw/vim-jsx"
+NeoBundle "othree/yajs.vim"
 
 " NeoBundle 'andrep/vimacs'
 call neobundle#end()
