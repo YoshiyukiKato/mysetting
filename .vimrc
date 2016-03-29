@@ -83,7 +83,8 @@ NeoBundleCheck
 "-------------------------
 
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
-
+nnoremap <C-n> gt
+nnoremap <C-p> gT
 "----------------------------------------------------
 "" Emacs風関係
 "----------------------------------------------------
